@@ -7,15 +7,16 @@ export class AppController {
 
   @Get('repayment-plan')
   calculateRepaymentPlan(@Query() query): CalcResponse {
-    // TODO 
+    // TODO
     // Validation for query params (Pipe?)
-    const { loanAmount, interestRate, initialRePayment, fixedInterestPeriod } = query;
+    const { loanAmount, interestRate, initialRePayment, fixedInterestPeriod } =
+      query;
 
     return this.appService.calcRepaymentPlan(
       loanAmount,
       interestRate,
       initialRePayment,
-      fixedInterestPeriod
+      fixedInterestPeriod,
     );
   }
 }
