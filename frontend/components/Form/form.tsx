@@ -42,6 +42,7 @@ const Form: React.FC<FormProps> = ({
   return (
     <Stack spacing={2}>
       <TextField
+        required
         error={isNaN(loanAmount)}
         helperText={isNaN(loanAmount) && ERROR_MSG}
         id="loan-amount"
@@ -66,6 +67,7 @@ const Form: React.FC<FormProps> = ({
       ></TextField>
 
       <TextField
+        required
         error={isNaN(interestRate)}
         helperText={isNaN(interestRate) && ERROR_MSG}
         id="interest-rate"
@@ -90,6 +92,7 @@ const Form: React.FC<FormProps> = ({
       ></TextField>
 
       <TextField
+        required
         error={isNaN(initialRePayment)}
         helperText={isNaN(initialRePayment) && ERROR_MSG}
         id="initial-repayment"
