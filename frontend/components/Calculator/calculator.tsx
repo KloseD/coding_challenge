@@ -16,7 +16,12 @@ const initialRePaymentInfos = (): RepaymentInfos => {
   };
 };
 
+// TODO
+// adding integration/e2e tests
+
 const Calculator: React.FC = () => {
+  // TODO
+  // using reducer (+ separate testing) instead of state
   const [results, setResults] = useState<ResultsProps | null>(null);
   const [repaymentInfos, setRepaymentInfos] = useState<RepaymentInfos>(
     initialRePaymentInfos()
