@@ -18,6 +18,7 @@ const initialRePaymentInfos = (): RepaymentInfos => {
 
 // TODO
 // adding integration/e2e tests
+// using MSW for mocking API
 
 const Calculator: React.FC = () => {
   // TODO
